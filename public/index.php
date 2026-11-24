@@ -1,5 +1,9 @@
 <?php
 
+http_response_code(503);
+header('Content-Type: text/plain; charset=utf-8');
+echo 'Simulated deployment failure';
+exit(1);
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
